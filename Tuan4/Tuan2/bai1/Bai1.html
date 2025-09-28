@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Cafe Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color: #000;
+        }
+        
+        .menu-container {
+            max-width: 1300px;
+            border: 1px solid #b34b4b;
+            background: #fff;
+        }
+        
+        .menu-title {
+            color: #d61717;
+            font-style: italic;
+            text-shadow: 8px 8px 0px #f4c9c9;
+            letter-spacing: 2px;
+        }
+        
+        .custom-navbar {
+            background: #f08080;
+            border-top: 1px solid #b34b4b;
+            border-bottom: 1px solid #b34b4b;
+            min-height: 44px;
+        }
+        
+        .custom-navbar .nav-link {
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding: 12px 20px;
+            border-right: 1px solid #fff;
+        }
+        
+        .custom-navbar .nav-link:hover {
+            background: #d46a6a;
+            color: #fff;
+        }
+        
+        .home-icon {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+        }
+        
+        .search-box input {
+            border: 1px solid #b34b4b;
+        }
+        
+        .search-box button {
+            border: 1px solid #b34b4b;
+            cursor: pointer;
+        }
+        
+        .search-box button:hover {
+            background: #f4c1c1;
+        }
+        
+        .sidebar-btn {
+            width: 100%;
+            margin: 6px 0;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: none;
+            background: #f6b5b5;
+            color: #fff;
+            cursor: pointer;
+            text-align: left;
+        }
+        
+        .sidebar-btn:hover {
+            background: #d46a6a;
+            color: #fff;
+        }
+        
+        .company-logo {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 50%;
+            box-shadow: 14px 14px 10px #dca1a1;
+        }
+        
+        .section-band {
+            background: #f6b5b5;
+            color: #7a1f1f;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 10px 0;
+            letter-spacing: 15px;
+            padding: 10px 15px;
+        }
+        
+        .veg {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+        
+        .special {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #b87a00;
+        }
+        
+        .back-link {
+            color: #ff0000;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .events-section {
+            background: #000;
+            color: #fff;
+            margin-top: 20px;
+        }
+        
+        .event-card {
+            background: #333;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .event-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        .event-card a {
+            color: #f08080;
+            font-size: 14px;
+        }
+        
+        .footer-section {
+            background: #f08080;
+            color: #fff;
+            text-align: center;
+            font-size: 25px;
+            padding: 25px;
+            font-weight: 700;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <div class="container-fluid d-flex justify-content-center py-4">
+        <div class="menu-container">
+            <!-- Header -->
+            <div class="text-center py-3">
+                <h1 class="menu-title">EXAMPLE CAFE MENU</h1>
+            </div>
+
+            <!-- Custom Navbar -->
+            <div class="custom-navbar d-flex align-items-center">
+                <a href="#top" class="nav-link">
+                    <img src="./icons8-home-50.png" alt="Home" class="home-icon">
+                </a>
+                <a href="#starter" class="nav-link">Starter</a>
+                <a href="#main" class="nav-link">Main Courses</a>
+                <a href="#desserts" class="nav-link">Desserts</a>
+                <div class="search-box d-flex ms-auto me-3">
+                    <input type="text" class="form-control" placeholder="Search..." style="width: 150px;">
+                    <button class="btn btn-light ms-1">Go</button>
+                </div>
+            </div>
+
+            <!-- Main Container -->
+            <div class="container-fluid p-3">
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-lg-2 col-md-3">
+                        <div class="sidebar">
+                            <button class="sidebar-btn">
+                                <i class="bi bi-cup-hot me-2"></i>Cafe Latte
+                            </button>
+                            <button class="sidebar-btn">
+                                <i class="bi bi-cup-hot me-2"></i>Capuchino
+                            </button>
+                            <button class="sidebar-btn">
+                                <i class="bi bi-cup-hot me-2"></i>Ocean Blue
+                            </button>
+                            <button class="sidebar-btn">
+                                <i class="bi bi-cup-hot me-2"></i>Ice-cream Cafe
+                            </button>
+                            <button class="sidebar-btn">
+                                <i class="bi bi-cart-plus me-2"></i>Order Online
+                            </button>
+                            <img src="./company.png" alt="Company" class="company-logo">
+                        </div>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="col-lg-7 col-md-9">
+                        <!-- Starter Section -->
+                        <div class="section mb-4" id="starter">
+                            <div class="section-band">Starter</div>
+                            <ul class="list-unstyled ps-3">
+                                <li class="mb-2">Chesnut and Mushroom Goujons <span class="veg">(v)</span></li>
+                                <li class="mb-2">Goat Cheese <span class="veg">(v)</span></li>
+                                <li class="mb-2"><span class="special">HONEY SOY CHICKEN KEBABS</span> <span class="veg">(v)</span></li>
+                                <li class="mb-2">Seafood Salad <span class="veg">(v)</span></li>
+                            </ul>
+                            <a href="#top" class="back-link">Back to Top</a>
+                        </div>
+
+                        <!-- Main Courses Section -->
+                        <div class="section mb-4" id="main">
+                            <div class="section-band">Main Courses</div>
+                            <ul class="list-unstyled ps-3">
+                                <li class="mb-2">Grilled Salmon with Lemon Butter <span class="veg">(v)</span></li>
+                                <li class="mb-2">Beef Tenderloin with Red Wine Sauce <span class="veg">(v)</span></li>
+                                <li class="mb-2"><span class="special">VEGETARIAN PASTA PRIMAVERA</span> <span class="veg">(v)</span></li>
+                                <li class="mb-2">Chicken Marsala <span class="veg">(v)</span></li>
+                            </ul>
+                            <a href="#top" class="back-link">Back to Top</a>
+                        </div>
+
+                        <!-- Desserts Section -->
+                        <div class="section mb-4" id="desserts">
+                            <div class="section-band">Desserts</div>
+                            <ul class="list-unstyled ps-3">
+                                <li class="mb-2">Lemon Sorbet <span class="veg">(v)</span></li>
+                                <li class="mb-2">Chocolate Mud Pie <span class="veg">(v)</span></li>
+                                <li class="mb-2">Pecan Pie <span class="veg">(v)</span></li>
+                                <li class="mb-2">Selection of fine Cheeses from Around the World <span class="veg">(v)</span></li>
+                            </ul>
+                            <a href="#top" class="back-link">Back to Top</a>
+                        </div>
+
+                        <!-- Information Form -->
+                        <div class="info-section">
+                            <div class="section-band">INFORMATION</div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="firstName" class="form-label">First Name</label>
+                                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="lastName" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="telephone" class="form-label">Telephone</label>
+                                                <input type="tel" class="form-control" id="telephone" placeholder="Telephone">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="country" class="form-label">Country</label>
+                                                <select class="form-select" id="country">
+                                                    <option selected>Choose Country</option>
+                                                    <option value="USA">USA</option>
+                                                    <option value="Vietnam">Vietnam</option>
+                                                    <option value="Japan">Japan</option>
+                                                    <option value="France">France</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Nationality</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="nationality" id="vietnamese" value="vietnamese">
+                                                    <label class="form-check-label" for="vietnamese">Vietnamese</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="nationality" id="foreigner" value="foreigner">
+                                                    <label class="form-check-label" for="foreigner">Foreigner</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="comment" class="form-label">Comment</label>
+                                            <textarea class="form-control" id="comment" rows="3" placeholder="Your comment..."></textarea>
+                                        </div>
+
+                                        <div class="d-flex gap-2">
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="bi bi-check-circle me-2"></i>Submit
+                                            </button>
+                                            <button type="reset" class="btn btn-secondary">
+                                                <i class="bi bi-x-circle me-2"></i>Cancel
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Events Sidebar -->
+                    <div class="col-lg-3">
+                        <div class="events-section p-3">
+                            <h2 class="text-center mb-4">
+                                <i class="bi bi-calendar-event me-2"></i>Events
+                            </h2>
+
+                            <div class="event-card">
+                                <h5 class="text-warning">
+                                    <i class="bi bi-people me-2"></i>Regular Meetings
+                                </h5>
+                                <img src="./meeting.png" alt="Meeting" class="img-fluid mb-3">
+                                <p class="small">Host your regular team meetings or activities in the comfort of your own private room.</p>
+                                <a href="#" class="btn btn-sm btn-outline-light">
+                                    <i class="bi bi-arrow-right me-1"></i>Read more...
+                                </a>
+                            </div>
+
+                            <div class="event-card">
+                                <h5 class="text-warning">
+                                    <i class="bi bi-rocket me-2"></i>Product Launches
+                                </h5>
+                                <img src="./launch.png" alt="Launch" class="img-fluid mb-3">
+                                <p class="small">Launch your product with ease in a space that truly fits its image.</p>
+                                <a href="#" class="btn btn-sm btn-outline-light">
+                                    <i class="bi bi-arrow-right me-1"></i>Read more...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer-section">
+                <i class="bi bi-building me-2"></i>ABC Company © - 12345678 - abccoffee@gmail.com
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html
